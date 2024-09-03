@@ -1,0 +1,16 @@
+{
+  "name": "osumionline/plugin-pdf",
+  "description": "Plugin OPDF para Osumi Framework",
+  "version": "3.0.0",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Osumi\\OsumiFramework\\Plugins\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.2",
+    "tecnickcom/tcpdf": "^6.7.5"
+  }
+}
