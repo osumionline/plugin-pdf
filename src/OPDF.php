@@ -19,9 +19,9 @@ class OPDF {
 	/**
 	 * Set up PDF file information
 	 *
-	 * @param array Information of the PDF file
+	 * @param array | null Information of the PDF file
 	 */
-	function __construct(array $data=null) {
+	function __construct(array | null $data = null) {
 		if (!is_null($data) && is_array($data)) {
 			$this->setCreator(  array_key_exists('creator',  $data) ? $data['creator']  : '' );
 			$this->setAuthor(   array_key_exists('author',   $data) ? $data['author']   : '' );
